@@ -1,6 +1,9 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
+
 # Meme-o-Matic 9000: Quantum Chaos Edition ☢️
+
+<img src="logo.png" />
 
 ## Basic Details
 
@@ -82,7 +85,7 @@ The Meme-o-Matic 9000 is more than just a viewer—it's a game with persistent s
 
 # Video
 
-![Demonstration]([recorded.mp4](https://drive.google.com/file/d/1lLhnXzSThyNlEmvVObDdoCikHHFdcjS5/view?usp=sharing))
+https://drive.google.com/file/d/1lLhnXzSThyNlEmvVObDdoCikHHFdcjS5/view?usp=sharing
 
 *Demonstration of the extension.*
 
@@ -90,7 +93,7 @@ The Meme-o-Matic 9000 is more than just a viewer—it's a game with persistent s
 
 ![workflow](diagram.png)
 
-*A simplified workflow showing how a meme is fetched, processed, and displayed on the screen.*
+*A simplified workflow of the extension*
 
 ## Contributions
 
