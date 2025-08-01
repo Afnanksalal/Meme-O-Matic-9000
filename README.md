@@ -66,8 +66,6 @@ The Meme-o-Matic 9000 is more than just a viewer—it's a game with persistent s
 
 ### Project Documentation
 
-For Software:
-
 # Screenshots 
 
 ![Main interface with meme](ss1.png)
@@ -81,6 +79,10 @@ For Software:
 ![Achievement unlocked notification](ss2.png)
 
 *A new achievement unlocked after reaching a major milestone.*
+
+# Video
+
+![Demonstration](recorded.mp4)
 
 # Diagrams
 
