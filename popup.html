@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meme-o-Matic 9000: Quantum Chaos Edition</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+  <button id="muteBtn" class="mute-btn">🔊</button>
+  <canvas class="matrix-rain" id="matrixCanvas"></canvas>
+  
+  <div class="main-container">
+    <header>
+      <h1>MEME-O-MATIC 9000</h1>
+      <h2 class="subtitle glitch">QUANTUM CHAOS EDITION™</h2>
+    </header>
+
+    <div class="chaos-meter">
+      <div class="chaos-fill" id="chaosLevelFill"></div>
+      <div class="chaos-text"><span class="glitch-text" id="chaosPercent">0</span>% <span class="label">CHAOS EMANATING</span></div>
+    </div>
+    
+    <div class="stats-panel" id="statsPanel">
+      <h3>SYSTEM LOG</h3>
+      <div class="stats-grid">
+        <div>Memes Watched: <span id="memesWatched">0</span></div>
+        <div>Chaos Points: <span id="chaosPoints">0</span></div>
+        <div>Sanity Left: <span id="sanityLeft">100</span>%</div>
+        <div>Sanity Check Failures: <span id="sanityCheckFailures">0</span></div>
+        <div>Existential Crises: <span id="lifeQuestions">0</span></div>
+        <div>Tab Duplication Events: <span id="tabDupes">0</span></div>
+        <div>Regret Level: <span id="regretLevel">Minimal</span></div>
+        <div>Time Wasted: <span id="timeWasted">0s</span></div>
+      </div>
+    </div>
+
+    <button id="startButton" class="terminal-button">INITIATE MEME SEQUENCE</button>
+    
+    <div class="chaos-mode">
+      <button id="chaosModeBtn" class="terminal-button">⚠️ ACTIVATE CHAOS MODE ⚠️</button>
+      <button id="megaChaosBtn" class="terminal-button" style="display:none;">💀 MEGA CHAOS 💀</button>
+      <button id="apocalypseBtn" class="terminal-button" style="display:none;">☢️ APOCALYPSE ☢️</button>
+    </div>
+    
+    <p class="warning glitch-text" id="chaosWarning" style="display:none;">
+      ⚠️ WARNING: REALITY DISTORTION IMMINENT ⚠️
+    </p>
+
+    <div id="memeContainer" style="display:none;">
+      <div class="meme-border">
+        <img id="memeImage" alt="Loading Chaos..." style="width: 100%; height: auto; min-height: 150px; background-color: #111;"/>
+      </div>
+      <div class="meme-info" id="memeInfo" style="display:none;">
+        Summoning digital specter...
+      </div>
+    </div>
+    
+    <div class="controls-container" style="display:none;">
+      <div class="effects-panel" id="effectsPanel">
+        <div class="panel-header">REALITY DISTORTION CONTROLS</div>
+        <button class="effect-btn terminal-button" id="glitchBtn">GLITCH</button>
+        <button class="effect-btn terminal-button" id="invertBtn">INVERT</button>
+        <button class="effect-btn terminal-button" id="matrixBtn">MATRIX</button>
+        <button class="effect-btn terminal-button" id="vintageBtn">VINTAGE</button>
+        <button class="effect-btn terminal-button" id="psychedelicBtn">PSYCHO</button>
+        <button class="effect-btn terminal-button" id="sepiaBtn">SEPIA</button>
+        <button class="effect-btn terminal-button" id="grayscaleBtn">GRAYSCALE</button>
+        <button class="effect-btn terminal-button" id="saturateBtn">SATURATE</button>
+        <button class="effect-btn terminal-button" id="resetEffectsBtn">RESET</button>
+      </div>
+
+      <div class="controls">
+        <button id="badMemeBtn" class="feedback-btn terminal-button" title="This meme has hurt my soul">💀</button>
+        <button id="goodMemeBtn" class="feedback-btn terminal-button" title="Actually decent">✨</button>
+        <button id="nextMemeBtn" class="terminal-button next-button">NEXT VOID</button>
+      </div>
+
+      <div class="advanced-controls" id="advancedControls">
+        <button class="effect-btn terminal-button" id="banMemeBtn">BANISH FOREVER</button>
+        <button class="effect-btn terminal-button" id="shareBtn">CURSE FRIENDS</button>
+        <button class="effect-btn terminal-button" id="reportBtn">REPORT TO OVERLORDS</button>
+      </div>
+    </div>
+    
+    <div class="soundboard-panel" style="display: none;" id="soundboardPanel">
+        <h3>AUDIO ABOMINATIONS</h3>
+        <button id="addSoundBtn" class="terminal-button">ADD RANDOM SOUND</button>
+    </div>
+
+    <div class="achievements-panel" id="achievementsPanel" style="display:none;">
+      <h3>ACHIEVEMENTS UNLOCKED</h3>
+      <ul id="achievementList"></ul>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
