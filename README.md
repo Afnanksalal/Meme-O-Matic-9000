@@ -71,17 +71,21 @@ For Software:
 # Screenshots 
 
 ![Main interface with meme](ss1.png)
+
 *The main interface showing a meme, the chaos meter, and sanity stats.*
 
 ![Chaos controls panel](ss3.png)
+
 *The Reality Distortion Controls and other chaotic buttons in action.*
 
 ![Achievement unlocked notification](ss2.png)
+
 *A new achievement unlocked after reaching a major milestone.*
 
 # Diagrams
 
-![workflow](workflow.png)
+![workflow](diagram.png)
+
 *A simplified workflow showing how a meme is fetched, processed, and displayed on the screen.*
 
 ## Contributions
