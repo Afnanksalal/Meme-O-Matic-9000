@@ -84,6 +84,8 @@ The Meme-o-Matic 9000 is more than just a viewer—it's a game with persistent s
 
 ![Demonstration](recorded.mp4)
 
+*Demonstration of the extension.*
+
 # Diagrams
 
 ![workflow](diagram.png)
