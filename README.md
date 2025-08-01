@@ -68,20 +68,20 @@ The Meme-o-Matic 9000 is more than just a viewer—it's a game with persistent s
 
 For Software:
 
-# Screenshots (Add at least 3)
+# Screenshots 
 
-\![Screenshot1](Add screenshot of the main popup with a meme visible)
+![Main interface with meme](ss1.png)
 *The main interface showing a meme, the chaos meter, and sanity stats.*
 
-\![Screenshot2](Add screenshot of the chaos controls/effects panel)
+![Chaos controls panel](ss3.png)
 *The Reality Distortion Controls and other chaotic buttons in action.*
 
-\![Screenshot3](Add a screenshot of an achievement notification or the achievements panel)
+![Achievement unlocked notification](ss2.png)
 *A new achievement unlocked after reaching a major milestone.*
 
 # Diagrams
 
-\![Workflow](Add your workflow/architecture diagram here)
+![workflow](workflow.png)
 *A simplified workflow showing how a meme is fetched, processed, and displayed on the screen.*
 
 ## Contributions
