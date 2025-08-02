@@ -7,7 +7,7 @@
 
 ## Basic Details
 
-### Creator: Afnan K Salal
+### Creator: Afnan K Salal - GEC THRISSUR
 
 ### Project Description
 
