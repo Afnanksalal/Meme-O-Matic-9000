@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme-o-Matic 9000: Download</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Press Start 2P', 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(45deg, #1a1a1a, #2d1b69, #1a1a1a, #8B0000);
+            background-size: 400% 400%;
+            animation: gradientShift 10s ease infinite;
+            color: #00ff00;
+            position: relative;
+            overflow: hidden;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .matrix-rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            opacity: 0.1;
+        }
+        .retro-card {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid #ff00ff;
+            box-shadow: 0 0 25px rgba(255, 0, 255, 0.5), inset 0 0 10px rgba(0, 255, 0, 0.2);
+            position: relative;
+        }
+        .download-button {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: white;
+            border: 2px solid #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: bold;
+            text-shadow: 1px 1px black;
+            position: relative;
+            overflow: hidden;
+            animation: buttonGlow 2s infinite alternate;
+        }
+        @keyframes buttonGlow {
+            from { box-shadow: 0 0 10px #007bff; }
+            to { box-shadow: 0 0 30px #007bff, 0 0 50px #0056b3; }
+        }
+        .download-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+        .download-button:hover:before {
+            left: 100%;
+        }
+        .download-button:hover {
+            transform: scale(1.05) rotate(1deg);
+        }
+        .download-button:active {
+            transform: scale(0.95);
+        }
+        @keyframes glow {
+            0%, 100% { filter: drop-shadow(0 0 5px #00ff00); }
+            50% { filter: drop-shadow(0 0 15px #00ff00); }
+        }
+        h1 {
+            animation: glow 2s infinite ease-in-out;
+            text-shadow: 3px 3px #000, 0 0 10px #ff00ff;
+        }
+        h2 {
+            animation: rainbow 2s linear infinite;
+        }
+        @keyframes rainbow {
+            0% { color: #ff0000; }
+            17% { color: #ff8800; }
+            33% { color: #ffff00; }
+            50% { color: #00ff00; }
+            67% { color: #0088ff; }
+            83% { color: #8800ff; }
+            100% { color: #ff0000; }
+        }
+        #scrolling-text-container {
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+            border-top: 1px dashed #00ff00;
+            border-bottom: 1px dashed #00ff00;
+            padding: 5px 0;
+            margin-top: 1.5rem;
+            box-sizing: border-box;
+        }
+        #scrolling-text {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll-left 15s linear infinite;
+        }
+        @keyframes scroll-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        .ascii-art {
+            white-space: pre;
+            line-height: 1;
+            font-size: 10px;
+            color: #00ff00;
+            opacity: 0.8;
+            text-shadow: 0 0 5px #00ff00;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <canvas id="matrixCanvas" class="matrix-rain"></canvas>
+    <div class="retro-card p-8 sm:p-12 rounded-lg max-w-xl mx-auto text-center">
+        <h1 class="text-3xl sm:text-4xl font-bold mb-2 text-[#ff00ff]">Meme-o-Matic 9000</h1>
+        <h2 class="text-sm sm:text-lg mb-6">QUANTUM CHAOS EDITION™</h2>
+        
+        <pre class="ascii-art hidden sm:block">
+            /-------------------\
+           (  !~ CHAOS ENGINE ~!  )
+            \-------------------/
+           .´`´.    .´`´.    .´`´.
+          .´`      .´`      .´`
+         (  )     (  )     (  )
+          `'.    _`'.    _`'.
+           `´   (  )   (  )
+               `´     `´
+        </pre>
+        
+        <p class="text-xs sm:text-base mb-8 text-gray-300">
+            Download the official Meme-o-Matic 9000 Chrome extension. All memes, all chaos, all yours.
+            Be warned: side effects include existential crises, reality glitches, and an unhealthy love for absurd humor.
+        </p>
+        <a href="your_extension.zip" download="meme-o-matic-9000.zip" class="inline-block">
+            <button id="downloadButton" class="download-button text-black font-extrabold text-xs sm:text-lg py-4 px-8 rounded-full shadow-lg">
+                DOWNLOAD ZIP (8-bit)
+            </button>
+        </a>
+
+        <div id="scrolling-text-container" class="mt-8">
+            <span id="scrolling-text">
+                <span class="text-[#ff00ff]"> >> STATUS: SYSTEM ONLINE << </span> <span class="text-[#00ff00]"> >> MEME DIMENSION STABLE << </span> <span class="text-[#ff00ff]"> >> SANITY PROTOCOLS OFFLINE << </span> <span class="text-[#00ff00]"> >> INITIATING DOWNLOAD.EXE << </span>
+            </span>
+        </div>
+    </div>
+    <script>
+        const matrixCanvas = document.getElementById('matrixCanvas');
+        const ctx = matrixCanvas.getContext('2d');
+        
+        const resizeCanvas = () => {
+            matrixCanvas.width = window.innerWidth;
+            matrixCanvas.height = window.innerHeight;
+        };
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+        
+        const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
+        const matrix = chars.split('');
+        const drops = Array(Math.floor(matrixCanvas.width / 15)).fill(1);
+        
+        function draw() {
+            ctx.fillStyle = 'rgba(12, 10, 9, 0.04)';
+            ctx.fillRect(0, 0, matrixCanvas.width, matrixCanvas.height);
+            ctx.fillStyle = '#38f411';
+            ctx.font = '15px monospace';
+            for (let i = 0; i < drops.length; i++) {
+                const text = matrix[Math.floor(Math.random() * matrix.length)];
+                ctx.fillText(text, i * 15, drops[i] * 15);
+                if (drops[i] * 15 > matrixCanvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+        
+        setInterval(draw, 45);
+
+        // JavaScript for button and scrolling text
+        const downloadButton = document.getElementById('downloadButton');
+        const scrollingText = document.getElementById('scrolling-text');
+        
+        downloadButton.addEventListener('click', () => {
+            // This is a placeholder for the actual download link
+            const downloadLink = "your_extension.zip"; 
+            const downloadElement = document.createElement('a');
+            downloadElement.href = downloadLink;
+            downloadElement.download = 'meme-o-matic-9000.zip';
+            document.body.appendChild(downloadElement);
+            downloadElement.click();
+            document.body.removeChild(downloadElement);
+        });
+    </script>
+</body>
+</html>
