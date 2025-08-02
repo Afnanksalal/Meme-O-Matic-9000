@@ -77,7 +77,7 @@
         }
         @keyframes glow {
             0%, 100% { filter: drop-shadow(0 0 5px #00ff00); }
-            50% { filter: drop-shadow(0 0 15px #00ff00); }
+            50% { filter: drop_shadow(0 0 15px #00ff00); }
         }
         h1 {
             animation: glow 2s infinite ease-in-out;
@@ -127,9 +127,9 @@
 </head>
 <body class="flex items-center justify-center min-h-screen p-4">
     <canvas id="matrixCanvas" class="matrix-rain"></canvas>
-    <div class="retro-card p-8 sm:p-12 rounded-lg max-w-xl mx-auto text-center">
-        <h1 class="text-3xl sm:text-4xl font-bold mb-2 text-[#ff00ff]">Meme-o-Matic 9000</h1>
-        <h2 class="text-sm sm:text-lg mb-6">QUANTUM CHAOS EDITION™</h2>
+    <div class="retro-card p-4 sm:p-8 rounded-lg max-w-xl mx-auto text-center">
+        <h1 class="text-3xl sm:text-4xl font-bold mb-2 text-[#ff00ff] leading-tight">Meme-o-Matic 9000</h1>
+        <h2 class="text-sm sm:text-lg mb-6 leading-tight">QUANTUM CHAOS EDITION™</h2>
         
         <pre class="ascii-art hidden sm:block">
             /-------------------\
@@ -147,8 +147,8 @@
             Download the official Meme-o-Matic 9000 Chrome extension. All memes, all chaos, all yours.
             Be warned: side effects include existential crises, reality glitches, and an unhealthy love for absurd humor.
         </p>
-        <a href="https://github.com/Afnanksalal/Meme-O-Matic-9000/releases/download/major/meme-o-matic-9000.zip" download="meme-o-matic-9000.zip" class="inline-block">
-            <button id="downloadButton" class="download-button text-black font-extrabold text-xs sm:text-lg py-4 px-8 rounded-full shadow-lg">
+        <a href="https://github.com/Afnanksalal/Meme-O-Matic-9000/releases/download/major/meme-o-matic-9000.zip" download="meme-o-matic-9000.zip" class="inline-block w-full">
+            <button id="downloadButton" class="download-button text-black font-extrabold text-xs sm:text-lg py-4 px-8 rounded-full shadow-lg w-full">
                 DOWNLOAD ZIP (8-bit)
             </button>
         </a>
@@ -191,12 +191,8 @@
         
         setInterval(draw, 45);
 
-        // JavaScript for button and scrolling text
         const downloadButton = document.getElementById('downloadButton');
-        const scrollingText = document.getElementById('scrolling-text');
-        
         downloadButton.addEventListener('click', () => {
-            // This is a placeholder for the actual download link
             const downloadLink = "https://github.com/Afnanksalal/Meme-O-Matic-9000/releases/download/major/meme-o-matic-9000.zip"; 
             const downloadElement = document.createElement('a');
             downloadElement.href = downloadLink;
