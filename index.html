@@ -14,7 +14,7 @@
             animation: gradientShift 10s ease infinite;
             color: #00ff00;
             position: relative;
-            overflow: hidden;
+            overflow-x: hidden;
         }
         @keyframes gradientShift {
             0% { background-position: 0% 50%; }
@@ -35,6 +35,14 @@
             border: 2px solid #ff00ff;
             box-shadow: 0 0 25px rgba(255, 0, 255, 0.5), inset 0 0 10px rgba(0, 255, 0, 0.2);
             position: relative;
+            width: 95%;
+            max-width: 500px;
+            padding: 1rem;
+        }
+        @media (min-width: 640px) {
+            .retro-card {
+                padding: 2rem;
+            }
         }
         .download-button {
             background: linear-gradient(45deg, #007bff, #0056b3);
@@ -77,14 +85,16 @@
         }
         @keyframes glow {
             0%, 100% { filter: drop-shadow(0 0 5px #00ff00); }
-            50% { filter: drop_shadow(0 0 15px #00ff00); }
+            50% { filter: drop-shadow(0 0 15px #00ff00); }
         }
         h1 {
             animation: glow 2s infinite ease-in-out;
             text-shadow: 3px 3px #000, 0 0 10px #ff00ff;
+            font-size: clamp(1.5rem, 6vw, 2.5rem);
         }
         h2 {
             animation: rainbow 2s linear infinite;
+            font-size: clamp(0.75rem, 3vw, 1rem);
         }
         @keyframes rainbow {
             0% { color: #ff0000; }
@@ -117,11 +127,16 @@
         .ascii-art {
             white-space: pre;
             line-height: 1;
-            font-size: 10px;
+            font-size: 8px;
             color: #00ff00;
             opacity: 0.8;
             text-shadow: 0 0 5px #00ff00;
             margin-bottom: 1rem;
+        }
+        @media (min-width: 640px) {
+            .ascii-art {
+                font-size: 10px;
+            }
         }
     </style>
 </head>
@@ -137,10 +152,10 @@
             \-------------------/
            .´`´.    .´`´.    .´`´.
           .´`      .´`      .´`
-         (  )     (  )     (  )
+         (  )      (  )      (  )
           `'.    _`'.    _`'.
-           `´   (  )   (  )
-               `´     `´
+            `´    (  )    (  )
+                  `´      `´
         </pre>
         
         <p class="text-xs sm:text-base mb-8 text-gray-300">
