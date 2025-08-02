@@ -44,10 +44,15 @@ My project is a client-side Chrome extension with all logic contained within `po
 
 # Installation
 
-1.  Clone this repository or download the ZIP file.
-2.  Open Chrome and navigate to `chrome://extensions`.
-3.  Enable "Developer mode" in the top right corner.
-4.  Click "Load unpacked" and select the project folder.
+Download the Extension: Go to my download page at https://meme-o-matic-9000.vercel.app/ and download the ZIP file.
+
+Unzip the File: Extract the contents of the ZIP file. Inside, you will find a folder named Meme-O-Matic-9000. This is the folder you will add to your browser.
+
+Open Extensions Page: Open Microsoft Edge or Google Chrome and navigate to chrome://extensions or edge://extensions.
+
+Enable Developer Mode: Turn on "Developer mode" in the top right corner of the page.
+
+Load the Extension: Click on the "Load unpacked" button and select the Meme-O-Matic-9000 folder you just unzipped.
 
 # Run
 
